@@ -102,7 +102,7 @@ Through this project, I improved my understanding of:
 ```bash
 git clone https://github.com/Your-name/SCT_WD_2.git
 ```
-2.ex:https://github.com/aLi-repos/SCT_WD_2.git
+ 2. ex:https://github.com/aLi-repos/SCT_WD_2.git
 
 3. Open the project folder.
 
