@@ -1,31 +1,38 @@
 # SCT_WD_2
-# 🍔 FoodBite – Responsive Restaurant Landing Page
+# ⏱️ TimeFit - Stopwatch Web Application
 
-![HTML](https://img.shields.io/badge/HTML5-Structure-orange?logo=html5)
-![CSS](https://img.shields.io/badge/CSS3-Styling-blue?logo=css3)
-![JavaScript](https://img.shields.io/badge/JavaScript-Interactive-yellow?logo=javascript)
-![Responsive](https://img.shields.io/badge/Responsive-Yes-success)
+## 📌 Overview
 
-## 📖 Overview
+TimeFit is a modern and responsive Stopwatch Web Application built using **HTML**, **CSS**, and **JavaScript**. It is designed with a clean user interface and provides essential stopwatch features along with a workout planner to enhance productivity and fitness tracking.
 
-**FoodBite** is a modern, responsive restaurant landing page developed using **HTML5, CSS3, and JavaScript**. The website is designed to provide an engaging user experience with a clean layout, responsive navigation, attractive sections, and mobile-friendly design.
-
-This project was completed as **Task 1** of the **SkillCraft Technology Web Development Internship**.
+This project was developed as **Task 2** of the **SkillCraft Technology Web Development Internship**.
 
 ---
 
 ## ✨ Features
 
-- 🍽️ Modern restaurant landing page
-- 📱 Fully responsive for mobile, tablet, and desktop
-- 🧭 Responsive navigation bar
-- 🎨 Clean and attractive user interface
-- 🖼️ Hero section with call-to-action
-- 🍕 Featured food/menu section
-- ⭐ Customer reviews/testimonials
-- 📞 Contact section
-- ⚡ Smooth scrolling and interactive elements
-- 🌐 Cross-browser compatibility
+- ▶️ Start Stopwatch
+- ⏸️ Pause Stopwatch
+- 🔄 Reset Stopwatch
+- 🏁 Lap Time Recording
+- 🗑️ Clear Lap Records
+- 🎨 Three Stopwatch Dial Themes
+  - 🟢 Classic Green
+  - 🔵 Neon Blue
+  - 🔴 Sport Red
+- 🏋️ Workout Planner
+  - ➕ Add Exercise
+  - ✏️ Edit Exercise
+  - 🗑️ Delete Exercise
+  - ✅ Mark as Completed
+- 📊 Statistics Dashboard
+  - Total Laps
+  - Total Exercises
+  - Completed Exercises
+- 💾 Local Storage Support
+- 📱 Fully Responsive Design
+- ⌨️ Keyboard Shortcuts
+- ✨ Smooth UI Animations
 
 ---
 
@@ -33,77 +40,82 @@ This project was completed as **Task 1** of the **SkillCraft Technology Web Deve
 
 - HTML5
 - CSS3
-- JavaScript
+- JavaScript (ES6)
+- Local Storage API
 
 ---
 
 ## 📂 Project Structure
 
-```text
-FoodBite/
+```
+TimeFit/
 │── index.html
 │── style.css
 │── script.js
-│── images/
-└── assets/
+│── assets/
+│   ├── images/
+│   └── icons/
+└── README.md
 ```
 
 ---
 
 ## 🎯 Learning Outcomes
 
-Through this project, I learned:
+Through this project, I improved my understanding of:
 
-- HTML5 semantic structure
-- CSS Flexbox and Grid
+- JavaScript DOM Manipulation
+- Event Handling
+- Stopwatch Logic
+- Dynamic UI Updates
+- Local Storage
 - Responsive Web Design
-- JavaScript DOM manipulation
-- UI/UX design principles
-- Organizing a front-end project
-- Git and GitHub project management
+- CSS Flexbox & Grid
+- UI/UX Design Principles
+- Project Organization
 
 ---
 
-## 🚀 How to Run
+## 📸 Project Preview
 
-1. Clone the repository:
+> Add screenshots of your application here after uploading them to the repository.
+
+---
+
+## 🚀 Future Improvements
+
+- ⏱️ Analog Stopwatch Dial
+- 📈 Workout Progress Charts
+- 🌙 Dark / Light Mode
+- 🔔 Sound Effects
+- 📅 Workout History
+- 🎯 Custom Workout Categories
+- 📤 Export Lap Records
+- ☁️ Cloud Data Sync
+
+---
+
+## 💻 How to Run
+
+1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+git clone https://github.com/your-username/SCT_WD_2.git
 ```
 
 2. Open the project folder.
 
 3. Open `index.html` in your browser.
 
-Or use the **Live Server** extension in Visual Studio Code for the best experience.
-
 ---
 
-## 📸 Screenshots
+## 📌 Internship Details
 
-> Add screenshots of your landing page here after uploading them to the repository.
+**Organization:** SkillCraft Technology
 
----
+**Internship Domain:** Web Development
 
-## 📈 Future Improvements
-
-- 🌙 Dark Mode
-- 🍔 Animated menu section
-- 📧 Contact form validation
-- 🔍 Search functionality
-- 🎥 Background video
-- 🍕 Food ordering integration
-
----
-
-## 👨‍💻 Internship
-
-**SkillCraft Technology**
-
-**Web Development Internship**
-
-**Task 1 – Responsive Landing Page**
+**Task:** Task 2 - Stopwatch Web Application
 
 ---
 
@@ -111,12 +123,8 @@ Or use the **Live Server** extension in Visual Studio Code for the best experien
 
 **Ali**
 
-- GitHub: https://github.com/kiruali
+GitHub:git clone https://github.com/aLi-repos/SCT_WD_2.git
 
 ---
 
-## ⭐ Support
-
-If you found this project helpful, consider giving it a ⭐ on GitHub!
-
-Thank you for visiting this repository!
+⭐ If you like this project, consider giving it a **Star** on GitHub!
