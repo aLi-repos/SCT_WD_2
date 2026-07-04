@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+:root {
+    --bg: #060b16;
+    --card: rgba(20, 28, 48, .75);
+    --border: rgba(255, 255, 255, .08);
+    --text: #eef3ff;
+    --muted: #9fb0d0;
+    --green: #42ff8c;
+    --blue: #33b8ff;
+    --red: #ff5a5a;
+    --purple: #8b5cf6;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    color: var(--text);
+    background: linear-gradient(135deg, #050814, #0d1530, #07101f);
+    background-size: 300% 300%;
+    animation: bgMove 15s ease infinite;
+    min-height: 100vh;
+}
+
+@keyframes bgMove {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.container {
+    width: min(1300px, 94%);
+    margin: 30px auto
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 28px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    backdrop-filter: blur(18px);
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.logo {
+    display: flex;
+    gap: 15px;
+    align-items: center
+}
+
+.logo i {
+    font-size: 2rem;
+    color: var(--purple)
+}
+
+.logo p {
+    color: var(--muted);
+    font-size: .9rem
+}
+
+nav {
+    display: flex;
+    gap: 30px
+}
+
+nav a {
+    text-decoration: none;
+    color: #d7def4;
+    font-weight: 500
+}
+
+nav a:hover {
+    color: var(--green)
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+
+.left-panel,
+.right-panel .card,
+.workout {
+    background: var(--card);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(18px);
+    border-radius: 24px;
+}
+
+.left-panel {
+    padding: 30px
+}
+
+.left-panel h1 {
+    text-align: center;
+    letter-spacing: 4px
+}
+
+.status {
+    text-align: center;
+    color: var(--green);
+    margin: 10px 0 25px
+}
+
+.stopwatch {
+    display: flex;
+    justify-content: center
+}
+
+.dial {
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 6px solid var(--green);
+    box-shadow: 0 0 20px var(--green), 0 0 60px rgba(66, 255, 140, .25), inset 0 0 40px rgba(255, 255, 255, .04);
+    background: radial-gradient(circle, #0d1327, #050814);
+    margin-bottom: 30px;
+    transition: .4s;
+}
+
+#display {
+    font-size: 3rem;
+    font-weight: 700
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.buttons button,
+#clearLap,
+#addWorkout,
+.theme {
+    border: none;
+    border-radius: 16px;
+    padding: 15px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .25s;
+}
+
+#start {
+    background: #1faa59
+}
+
+#pause {
+    background: #c99600
+}
+
+#reset {
+    background: #d03c3c
+}
+
+#lap {
+    background: #6f42ff
+}
+
+.buttons button:hover,
+.theme:hover,
+#addWorkout:hover {
+    transform: translateY(-3px) scale(1.03)
+}
+
+.lap-box {
+    margin-top: 30px
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px
+}
+
+#clearLap {
+    background: #7d2630;
+    padding: 10px 18px
+}
+
+#lapList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+#lapList li {
+    background: #111a2f;
+    padding: 14px 18px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+}
+
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.card {
+    padding: 24px
+}
+
+.card h2 {
+    margin-bottom: 18px
+}
+
+.themes {
+    display: flex;
+    flex-direction: column;
+    gap: 14px
+}
+
+.green {
+    background: #1faa59
+}
+
+.blue {
+    background: #0e8ed7
+}
+
+.red {
+    background: #cf4040
+}
+
+.stats {
+    display: grid;
+    gap: 15px
+}
+
+.stats div {
+    background: #111a2f;
+    padding: 18px;
+    border-radius: 16px;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stats span {
+    font-size: 2rem;
+    font-weight: 700
+}
+
+.workout {
+    margin-top: 25px;
+    padding: 25px;
+}
+
+.workout-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#addWorkout {
+    background: var(--purple);
+}
+
+#workoutList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.workout-card {
+    background: #111a2f;
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 18px;
+    padding: 20px;
+    transition: .3s;
+}
+
+.workout-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .4);
+}
+
+.workout-card h3 {
+    color: white;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.workout-card p {
+    color: #9fb0d0;
+    margin-bottom: 20px;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.actions button {
+    flex: 1;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.complete-btn {
+    background: #1faa59;
+}
+
+.edit-btn {
+    background: #0e8ed7;
+}
+
+.delete-btn {
+    background: #cf4040;
+}
+
+body.theme-blue .dial {
+    border-color: blue;
+    box-shadow: 0 0 20px var(--blue), 0 0 60px rgba(51, 184, 255, .25);
+}
+
+body.theme-red .dial {
+    border-color: var(--red);
+    box-shadow: 0 0 20px var(--red), 0 0 60px rgba(255, 90, 90, .25);
+}
+
+@media(max-width:960px) {
+    main {
+        grid-template-columns: 1fr
+    }
+
+    .buttons {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .dial {
+        width: 300px;
+        height: 300px
+    }
+
+    #display {
+        font-size: 2.2rem
+    }
+
+    header {
+        flex-direction: column;
+        gap: 18px
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center
+    }
+}
+
+@media(max-width:520px) {
+    .dial {
+        width: 240px;
+        height: 240px
+    }
+
+    #display {
+        font-size: 1.8rem
+    }
+
+    .buttons {
+        grid-template-columns: 1fr
+    }
+
+    .workout-header {
+        flex-direction: column;
+        gap: 15px
+    }
+}

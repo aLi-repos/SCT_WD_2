@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeFit Stopwatch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-stopwatch"></i>
+                <div>
+                    <h2>TimeFit</h2>
+                    <p>Focus • Train • Improve</p>
+                </div>
+            </div>
+            <nav>
+                <a href="#">Stopwatch</a>
+                <a href="#">Workout</a>
+                <a href="#">Statistics</a>
+            </nav>
+        </header>
+        <main>
+            <section class="left-panel">
+                <h1>STOPWATCH</h1>
+                <p class="status">● READY</p>
+                <div class="stopwatch">
+                    <div class="dial">
+                        <h2 id="display">
+                            00:00:00.00
+                        </h2>
+                    </div>
+                </div>
+                <div class="buttons">
+
+                    <button id="start">
+                        <i class="fa-solid fa-play"></i>
+                        Start
+                    </button>
+                    <button id="pause">
+                        <i class="fa-solid fa-pause"></i>
+                        Pause
+                    </button>
+                    <button id="reset">
+                        <i class="fa-solid fa-rotate-left"></i>
+                        Reset
+                    </button>
+                    <button id="lap">
+                        <i class="fa-solid fa-flag"></i>
+                        Lap
+                    </button>
+                </div>
+                <div class="lap-box">
+                    <div class="title">
+                        <h3>Lap Records</h3>
+                        <button id="clearLap">
+                            Clear
+                        </button>
+                    </div>
+                    <ul id="lapList">
+                    </ul>
+                </div>
+            </section>
+            <section class="right-panel">
+                <div class="card">
+                    <h2>
+                        Theme Dial
+                    </h2>
+                    <div class="themes">
+                        <button class="theme green">
+                            Classic Green
+                        </button>
+                        <button class="theme blue">
+                            Neon Blue
+                        </button>
+                        <button class="theme red">
+                            Sport Red
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>
+                        Statistics
+                    </h2>
+                    <div class="stats">
+                        <div>
+                            <h3>Total Laps</h3>
+                            <span id="lapCount">0</span>
+                        </div>
+                        <div>
+                            <h3>Exercises</h3>
+                            <span id="exerciseCount">0</span>
+                        </div>
+                        <div>
+                            <h3>Completed</h3>
+                            <span id="completedCount">0</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <section class="workout">
+            <div class="workout-header">
+                <h2>
+                    Workout Planner
+                </h2>
+                <button id="addWorkout">
+                    + Add Exercise
+                </button>
+            </div>
+            <div id="workoutList">
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
