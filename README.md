@@ -100,7 +100,9 @@ Through this project, I improved my understanding of:
 1. Clone the repository
 
 ```bash
-git clone https://github.com/aLi-repos/SCT_WD_2.git
+git clone https://github.com/Your-name/SCT_WD_2.git
+
+ex:https://github.com/aLi-repos/SCT_WD_2.git
 ```
 
 2. Open the project folder.
